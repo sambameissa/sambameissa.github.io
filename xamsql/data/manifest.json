@@ -1,0 +1,16 @@
+{
+  "files": {
+    "boutique.sqlite": {
+      "bytes": 110592,
+      "sha256": "ac7bf1a715b1a9894ff3e26e90fe00819ecf321331d7ca4e724e6640252d15e9"
+    },
+    "ecole.sqlite": {
+      "bytes": 36864,
+      "sha256": "6e4de1edd3119d9b5c6597d3b85296212de791c841b3a1bf3ead96f7f56bbd78"
+    },
+    "content.json": {
+      "bytes": 278884,
+      "sha256": "6884e00e5392f967d51353682c39500564f71a2d07d349097e64cf6a94a98fc7"
+    }
+  }
+}

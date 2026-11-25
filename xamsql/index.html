@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>XamSQL</title>
+    <meta name="description" content="Entraînement SQL : exercices corrigés, leçons, test de niveau — en local." />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="/xamsql/brand/xamsql-favicon-64.png" sizes="64x64" />
+    <script>
+      // Thème appliqué avant le premier rendu (pas de flash clair -> sombre).
+      try {
+        var t = localStorage.getItem("xamsql.theme") || "system";
+        if (t === "system") t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="/xamsql/assets/index-BJxVZAwk.js"></script>
+    <link rel="stylesheet" crossorigin href="/xamsql/assets/index-B6rP8h31.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <noscript>XamSQL a besoin de JavaScript.</noscript>
+  </body>
+</html>
