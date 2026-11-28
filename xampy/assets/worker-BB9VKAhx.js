@@ -92,6 +92,8 @@ def show(value):
         }
     if value is None:
         return {"kind": "text", "text": "None"}
+    if np is not None and isinstance(value, np.generic):
+        value = value.item()  # np.float64(3.5) -> 3.5 : affiché comme un nombre Python
     try:
         text = repr(value)
     except Exception as e:  # pragma: no cover
@@ -253,12 +255,18 @@ def explain_error(e: BaseException, ns: dict, code: str = "") -> dict:
         key = e.args[0] if e.args else None
         frames = _frames(ns)
         cols = [str(c) for _, df in frames for c in df.columns]
-        missing = re.fullmatch(r"\\[(.*)\\] not in index", key) if isinstance(key, str) else None
+        missing = re.fullmatch(r"\\[(.*)\\] not (?:in index|found in axis)", key) if isinstance(key, str) else None
         if missing and frames:
             names = re.findall(r"'([^']*)'", missing.group(1)) or [missing.group(1)]
             msg = ("La colonne « " + names[0] + " » n'existe pas.") if len(names) == 1 else ("Les colonnes " + ", ".join(f"« {n} »" for n in names) + " n'existent pas.")
             fixes = [f"« {n} » → « {near} »" for n in names if (near := _closest(n, cols))]
             hint = ("Tu voulais peut-être dire : " + ", ".join(fixes) + ".") if fixes else f"Colonnes disponibles : {', '.join(dict.fromkeys(cols))[:300]}."
+            if "found in axis" in key and all(n in cols for n in names):
+                msg = f"« {names[0]} » est une colonne, mais drop cherche par défaut une ligne."
+                hint = "Pour supprimer une colonne : df.drop(columns=[\\"" + names[0] + "\\"])."
+        elif isinstance(key, tuple) and frames and all(isinstance(k, str) for k in key):
+            msg = "Plusieurs noms de colonnes entre simples crochets sont lus comme un seul nom : " + repr(key) + "."
+            hint = "Pour plusieurs colonnes, passe une liste : df[[" + ", ".join(repr(k) for k in key) + "]] (doubles crochets)."
         elif isinstance(key, str) and frames:
             msg = f"La colonne (ou clé) « {key} » n'existe pas."
             near = _closest(key, cols)

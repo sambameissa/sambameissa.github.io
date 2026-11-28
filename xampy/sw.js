@@ -1,8 +1,8 @@
-/* XamPy — service worker généré par scripts/pwa.mjs (version 506bd188298c). */
-const CACHE = "xampy-506bd188298c";
+/* XamPy — service worker généré par scripts/pwa.mjs (version 12fd6dce98be). */
+const CACHE = "xampy-12fd6dce98be";
 const PY_CACHE = "xampy-pyodide-314.0.8";
 const PY_PREFIX = "https://cdn.jsdelivr.net/pyodide/v314.0.8/";
-const PRECACHE = ["./","assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2","assets/ibm-plex-mono-latin-500-normal-DSY6xOcd.woff2","assets/ibm-plex-mono-latin-600-normal-BgSNZQsw.woff2","assets/ibm-plex-sans-latin-400-italic-CZTNEAuW.woff2","assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2","assets/ibm-plex-sans-latin-500-normal-6ng42L7E.woff2","assets/ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2","assets/ibm-plex-sans-latin-700-normal-Bxkt5Cjx.woff2","assets/index-BOZh_0cT.js","assets/index-CDE5wV6z.css","assets/worker-mNsTYRC-.js","data/categories.csv","data/clients.csv","data/clients_bruts.csv","data/commandes.csv","data/commandes_api.json","data/content.json","data/lignes_commande.csv","data/paiements.csv","data/produits.csv","data/stocks_fr.csv","icon.svg","manifest.webmanifest"];
+const PRECACHE = ["./","assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2","assets/ibm-plex-mono-latin-500-normal-DSY6xOcd.woff2","assets/ibm-plex-mono-latin-600-normal-BgSNZQsw.woff2","assets/ibm-plex-sans-latin-400-italic-CZTNEAuW.woff2","assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2","assets/ibm-plex-sans-latin-500-normal-6ng42L7E.woff2","assets/ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2","assets/ibm-plex-sans-latin-700-normal-Bxkt5Cjx.woff2","assets/index-C9q8kZn-.js","assets/index-Cl_EGYFU.css","assets/worker-BB9VKAhx.js","data/categories.csv","data/clients.csv","data/clients_bruts.csv","data/commandes.csv","data/commandes_api.json","data/content.json","data/lignes_commande.csv","data/manuel.json","data/paiements.csv","data/produits.csv","data/stocks_fr.csv","icon.svg","manifest.webmanifest"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE).then((c) => c.addAll(PRECACHE)).then(() => self.skipWaiting()));
