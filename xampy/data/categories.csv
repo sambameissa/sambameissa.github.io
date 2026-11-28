@@ -1,0 +1,13 @@
+id,nom,parent_id
+1,Épicerie,
+2,Boissons,
+3,Hygiène,
+4,Électronique,
+5,Vêtements,
+6,Maison,
+7,Papeterie,
+8,Snacks,
+9,Sodas,2
+10,Jus & sirops,2
+11,Céréales & légumineuses,1
+12,Condiments,1

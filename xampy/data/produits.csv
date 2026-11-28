@@ -1,0 +1,43 @@
+id,nom,categorie_id,prix,cout,actif
+1,Riz brisé 5kg,11,7115,4910.87,1
+2,Huile d'arachide 1L,12,1440,820.33,1
+3,Sucre en poudre 1kg,11,4005,2635.34,1
+4,Farine de blé 1kg,12,7725,4644.03,1
+5,Concentré de tomate 400g,11,3860,2449.71,1
+6,Lait en poudre 400g,12,8655,5704.5,1
+7,Café soluble 200g,11,7085,4473.49,1
+8,Thé vert 100g,12,9660,5805.84,1
+9,Bissap 1L,9,2120,1204.45,1
+10,Eau minérale 1.5L,10,4575,3621.74,1
+11,Jus de bouye 33cl,9,6830,5333.71,1
+12,Soda cola 33cl,10,4755,3519.78,1
+13,Gingembre pressé 1L,9,3540,2274.22,1
+14,Café Touba moulu 250g,10,4720,3031.84,1
+15,Savon de Marseille,3,6795,4212.47,1
+16,Dentifrice 100ml,3,7550,4646.03,1
+17,Shampoing 400ml,3,5805,3559.15,1
+18,Papier toilette x6,3,8805,5216.61,1
+19,Gel douche 500ml,3,7830,5470.61,1
+20,Écouteurs filaires,4,4860,3137.44,1
+21,Chargeur USB-C,4,3570,2134.54,1
+22,Batterie externe 10000mAh,4,720,426.53,1
+23,Ampoule LED,4,7175,4011.79,1
+24,Rallonge électrique 5m,4,4510,2908.57,1
+25,Boubou homme,5,8680,5139.78,1
+26,Foulard imprimé wax,5,8020,5747.52,1
+27,T-shirt coton,5,5510,3174.34,1
+28,Sandales cuir,5,7570,5289.67,0
+29,Casquette,5,7895,4627.84,0
+30,Natte de prière,6,2350,1442.64,1
+31,Théière en inox,6,930,722.02,1
+32,Set de verres à thé,6,6490,5175.47,1
+33,Balai coco,6,3475,2091.26,1
+34,Seau 10L,6,665,496.4,1
+35,Cahier 200 pages,7,1730,964.89,1
+36,Stylo bille (lot de 10),7,5775,4141.46,1
+37,Classeur A4,7,2945,1852.55,1
+38,Calculatrice scientifique,7,3185,2433.27,1
+39,Arachides grillées 200g,8,7010,4898.56,1
+40,Biscuits sablés,8,1560,888.21,1
+41,Chips de plantain,8,8520,5878.28,0
+42,Beignets sucrés (lot),8,4530,2817.82,1

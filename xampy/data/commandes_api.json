@@ -1,0 +1,577 @@
+{
+  "page": 1,
+  "par_page": 25,
+  "total": 25,
+  "resultats": [
+    {
+      "id": 480,
+      "date": "2026-09-10",
+      "statut": "payee",
+      "client": {
+        "id": 101,
+        "nom": "Abdoulaye Cissé",
+        "ville": "Touba"
+      },
+      "lignes": [
+        {
+          "produit": "Riz brisé 5kg",
+          "quantite": 5,
+          "prix_unitaire": 7115
+        }
+      ]
+    },
+    {
+      "id": 479,
+      "date": "2026-01-31",
+      "statut": "annulee",
+      "client": {
+        "id": 29,
+        "nom": "Cheikh Cissé",
+        "ville": "Rufisque"
+      },
+      "lignes": [
+        {
+          "produit": "Théière en inox",
+          "quantite": 3,
+          "prix_unitaire": 930
+        },
+        {
+          "produit": "Gel douche 500ml",
+          "quantite": 4,
+          "prix_unitaire": 7830
+        }
+      ]
+    },
+    {
+      "id": 478,
+      "date": "2026-06-15",
+      "statut": "payee",
+      "client": {
+        "id": 102,
+        "nom": "Khadija Diouf",
+        "ville": "Mbour"
+      },
+      "lignes": [
+        {
+          "produit": "Chips de plantain",
+          "quantite": 2,
+          "prix_unitaire": 8520
+        }
+      ]
+    },
+    {
+      "id": 477,
+      "date": "2025-07-23",
+      "statut": "payee",
+      "client": {
+        "id": 75,
+        "nom": "Moussa Ba",
+        "ville": "Rufisque"
+      },
+      "lignes": [
+        {
+          "produit": "Set de verres à thé",
+          "quantite": 1,
+          "prix_unitaire": 6490
+        }
+      ]
+    },
+    {
+      "id": 476,
+      "date": "2026-09-07",
+      "statut": "payee",
+      "client": {
+        "id": 123,
+        "nom": "Alioune Ba",
+        "ville": "Rufisque"
+      },
+      "lignes": [
+        {
+          "produit": "Sandales cuir",
+          "quantite": 3,
+          "prix_unitaire": 7570
+        },
+        {
+          "produit": "Foulard imprimé wax",
+          "quantite": 1,
+          "prix_unitaire": 8020
+        },
+        {
+          "produit": "Calculatrice scientifique",
+          "quantite": 1,
+          "prix_unitaire": 3185
+        }
+      ]
+    },
+    {
+      "id": 475,
+      "date": "2025-07-16",
+      "statut": "payee",
+      "client": {
+        "id": 20,
+        "nom": "Abdoulaye Cissé",
+        "ville": "Mbour"
+      },
+      "lignes": [
+        {
+          "produit": "Batterie externe 10000mAh",
+          "quantite": 4,
+          "prix_unitaire": 720
+        },
+        {
+          "produit": "Farine de blé 1kg",
+          "quantite": 1,
+          "prix_unitaire": 7725
+        },
+        {
+          "produit": "Stylo bille (lot de 10)",
+          "quantite": 1,
+          "prix_unitaire": 5775
+        },
+        {
+          "produit": "Arachides grillées 200g",
+          "quantite": 2,
+          "prix_unitaire": 7010
+        }
+      ]
+    },
+    {
+      "id": 474,
+      "date": "2026-02-04",
+      "statut": "payee",
+      "client": {
+        "id": 42,
+        "nom": "Pape Toure",
+        "ville": "Rufisque"
+      },
+      "lignes": [
+        {
+          "produit": "Rallonge électrique 5m",
+          "quantite": 1,
+          "prix_unitaire": 4510
+        }
+      ]
+    },
+    {
+      "id": 473,
+      "date": "2026-07-07",
+      "statut": "payee",
+      "client": {
+        "id": 28,
+        "nom": "Aissatou Cissé",
+        "ville": "Kaolack"
+      },
+      "lignes": [
+        {
+          "produit": "Batterie externe 10000mAh",
+          "quantite": 1,
+          "prix_unitaire": 720
+        },
+        {
+          "produit": "Eau minérale 1.5L",
+          "quantite": 3,
+          "prix_unitaire": 4575
+        },
+        {
+          "produit": "Huile d'arachide 1L",
+          "quantite": 5,
+          "prix_unitaire": 1440
+        }
+      ]
+    },
+    {
+      "id": 472,
+      "date": "2026-07-09",
+      "statut": "payee",
+      "client": {
+        "id": 64,
+        "nom": "Coumba Cissé",
+        "ville": "Touba"
+      },
+      "lignes": [
+        {
+          "produit": "Seau 10L",
+          "quantite": 3,
+          "prix_unitaire": 665
+        }
+      ]
+    },
+    {
+      "id": 471,
+      "date": "2026-09-05",
+      "statut": "payee",
+      "client": {
+        "id": 68,
+        "nom": "Serigne Dieng",
+        "ville": "Touba"
+      },
+      "lignes": [
+        {
+          "produit": "Théière en inox",
+          "quantite": 4,
+          "prix_unitaire": 930
+        },
+        {
+          "produit": "Papier toilette x6",
+          "quantite": 1,
+          "prix_unitaire": 8805
+        }
+      ]
+    },
+    {
+      "id": 470,
+      "date": "2025-07-17",
+      "statut": "payee",
+      "client": {
+        "id": 105,
+        "nom": "Ousmane Sall",
+        "ville": "Kaolack"
+      },
+      "lignes": [
+        {
+          "produit": "Dentifrice 100ml",
+          "quantite": 3,
+          "prix_unitaire": 7550
+        },
+        {
+          "produit": "Rallonge électrique 5m",
+          "quantite": 2,
+          "prix_unitaire": 4510
+        }
+      ]
+    },
+    {
+      "id": 469,
+      "date": "2026-05-09",
+      "statut": "payee",
+      "client": {
+        "id": 129,
+        "nom": "Dieynaba Camara",
+        "ville": "Ziguinchor"
+      },
+      "lignes": [
+        {
+          "produit": "Shampoing 400ml",
+          "quantite": 3,
+          "prix_unitaire": 5805
+        }
+      ]
+    },
+    {
+      "id": 468,
+      "date": "2026-03-30",
+      "statut": "payee",
+      "client": {
+        "id": 74,
+        "nom": "Ibrahima Diouf",
+        "ville": "Ziguinchor"
+      },
+      "lignes": [
+        {
+          "produit": "Écouteurs filaires",
+          "quantite": 5,
+          "prix_unitaire": 4860
+        },
+        {
+          "produit": "Jus de bouye 33cl",
+          "quantite": 4,
+          "prix_unitaire": 6830
+        },
+        {
+          "produit": "Lait en poudre 400g",
+          "quantite": 2,
+          "prix_unitaire": 8655
+        }
+      ]
+    },
+    {
+      "id": 467,
+      "date": "2026-08-19",
+      "statut": "payee",
+      "client": {
+        "id": 62,
+        "nom": "Alioune Cissé",
+        "ville": "Mbour"
+      },
+      "lignes": [
+        {
+          "produit": "Concentré de tomate 400g",
+          "quantite": 1,
+          "prix_unitaire": 3860
+        },
+        {
+          "produit": "Balai coco",
+          "quantite": 3,
+          "prix_unitaire": 3475
+        },
+        {
+          "produit": "Sandales cuir",
+          "quantite": 5,
+          "prix_unitaire": 7570
+        },
+        {
+          "produit": "Chargeur USB-C",
+          "quantite": 4,
+          "prix_unitaire": 3570
+        }
+      ]
+    },
+    {
+      "id": 466,
+      "date": "2025-08-03",
+      "statut": "payee",
+      "client": {
+        "id": 50,
+        "nom": "Alioune Gueye",
+        "ville": "Dakar"
+      },
+      "lignes": [
+        {
+          "produit": "Cahier 200 pages",
+          "quantite": 4,
+          "prix_unitaire": 1730
+        },
+        {
+          "produit": "Seau 10L",
+          "quantite": 4,
+          "prix_unitaire": 665
+        },
+        {
+          "produit": "Rallonge électrique 5m",
+          "quantite": 1,
+          "prix_unitaire": 4510
+        },
+        {
+          "produit": "Ampoule LED",
+          "quantite": 4,
+          "prix_unitaire": 7175
+        }
+      ]
+    },
+    {
+      "id": 465,
+      "date": "2025-03-05",
+      "statut": "payee",
+      "client": {
+        "id": 124,
+        "nom": "Babacar Ndiaye",
+        "ville": "Thiès"
+      },
+      "lignes": [
+        {
+          "produit": "Eau minérale 1.5L",
+          "quantite": 2,
+          "prix_unitaire": 4575
+        },
+        {
+          "produit": "Stylo bille (lot de 10)",
+          "quantite": 2,
+          "prix_unitaire": 5775
+        }
+      ]
+    },
+    {
+      "id": 464,
+      "date": "2026-08-24",
+      "statut": "payee",
+      "client": {
+        "id": 5,
+        "nom": "Dieynaba Fall",
+        "ville": "Rufisque"
+      },
+      "lignes": [
+        {
+          "produit": "Set de verres à thé",
+          "quantite": 3,
+          "prix_unitaire": 6490
+        },
+        {
+          "produit": "Concentré de tomate 400g",
+          "quantite": 3,
+          "prix_unitaire": 3860
+        }
+      ]
+    },
+    {
+      "id": 463,
+      "date": "2026-04-01",
+      "statut": "payee",
+      "client": {
+        "id": 93,
+        "nom": "Marème Faye",
+        "ville": "Rufisque"
+      },
+      "lignes": [
+        {
+          "produit": "Gingembre pressé 1L",
+          "quantite": 1,
+          "prix_unitaire": 3540
+        },
+        {
+          "produit": "Natte de prière",
+          "quantite": 3,
+          "prix_unitaire": 2350
+        }
+      ]
+    },
+    {
+      "id": 462,
+      "date": "2026-06-27",
+      "statut": "payee",
+      "client": {
+        "id": 86,
+        "nom": "Modou Diouf",
+        "ville": "Rufisque"
+      },
+      "lignes": [
+        {
+          "produit": "T-shirt coton",
+          "quantite": 5,
+          "prix_unitaire": 5510
+        },
+        {
+          "produit": "Thé vert 100g",
+          "quantite": 4,
+          "prix_unitaire": 9660
+        },
+        {
+          "produit": "Shampoing 400ml",
+          "quantite": 2,
+          "prix_unitaire": 5805
+        }
+      ]
+    },
+    {
+      "id": 461,
+      "date": "2026-03-10",
+      "statut": "payee",
+      "client": {
+        "id": 130,
+        "nom": "Ibrahima Ba",
+        "ville": "Dakar"
+      },
+      "lignes": [
+        {
+          "produit": "Classeur A4",
+          "quantite": 2,
+          "prix_unitaire": 2945
+        }
+      ]
+    },
+    {
+      "id": 460,
+      "date": "2026-09-07",
+      "statut": "payee",
+      "client": {
+        "id": 40,
+        "nom": "Astou Dieng",
+        "ville": "Dakar"
+      },
+      "lignes": [
+        {
+          "produit": "Calculatrice scientifique",
+          "quantite": 3,
+          "prix_unitaire": 3185
+        }
+      ]
+    },
+    {
+      "id": 459,
+      "date": "2026-06-22",
+      "statut": "payee",
+      "client": {
+        "id": 82,
+        "nom": "Thierno Camara",
+        "ville": "Kaolack"
+      },
+      "lignes": [
+        {
+          "produit": "Thé vert 100g",
+          "quantite": 5,
+          "prix_unitaire": 9660
+        }
+      ]
+    },
+    {
+      "id": 458,
+      "date": "2026-07-15",
+      "statut": "payee",
+      "client": {
+        "id": 46,
+        "nom": "Fatou Cissé",
+        "ville": "Ziguinchor"
+      },
+      "lignes": [
+        {
+          "produit": "Sandales cuir",
+          "quantite": 1,
+          "prix_unitaire": 7570
+        },
+        {
+          "produit": "Rallonge électrique 5m",
+          "quantite": 1,
+          "prix_unitaire": 4510
+        },
+        {
+          "produit": "Thé vert 100g",
+          "quantite": 4,
+          "prix_unitaire": 9660
+        }
+      ]
+    },
+    {
+      "id": 457,
+      "date": "2026-08-24",
+      "statut": "payee",
+      "client": {
+        "id": 100,
+        "nom": "Mariama Wade",
+        "ville": "Saint-Louis"
+      },
+      "lignes": [
+        {
+          "produit": "Farine de blé 1kg",
+          "quantite": 1,
+          "prix_unitaire": 7725
+        },
+        {
+          "produit": "Soda cola 33cl",
+          "quantite": 2,
+          "prix_unitaire": 4755
+        },
+        {
+          "produit": "Concentré de tomate 400g",
+          "quantite": 3,
+          "prix_unitaire": 3860
+        }
+      ]
+    },
+    {
+      "id": 456,
+      "date": "2026-05-07",
+      "statut": "payee",
+      "client": {
+        "id": 112,
+        "nom": "Fatou Mbaye",
+        "ville": "Dakar"
+      },
+      "lignes": [
+        {
+          "produit": "Thé vert 100g",
+          "quantite": 4,
+          "prix_unitaire": 9660
+        },
+        {
+          "produit": "Eau minérale 1.5L",
+          "quantite": 3,
+          "prix_unitaire": 4575
+        },
+        {
+          "produit": "Papier toilette x6",
+          "quantite": 5,
+          "prix_unitaire": 8805
+        }
+      ]
+    }
+  ]
+}

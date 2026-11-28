@@ -6,10 +6,10 @@
     <title>Page introuvable</title>
     <script>
       // GitHub Pages ne connaît pas les routes des applications d'une seule page :
-      // toute adresse inconnue arrive ici. Celles des applis (XamSQL, Iqra) sont renvoyées vers
+      // toute adresse inconnue arrive ici. Celles des applis (XamSQL, Iqra, XamPy) sont renvoyées vers
       // l'appli, qui restaure l'adresse demandée (voir src/main.tsx de chaque appli).
       (function () {
-        var apps = ["/xamsql", "/iqra"];
+        var apps = ["/xamsql", "/iqra", "/xampy"];
         var p = location.pathname;
         for (var i = 0; i < apps.length; i++) {
           var base = apps[i];

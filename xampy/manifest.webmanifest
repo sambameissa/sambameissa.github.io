@@ -1,0 +1,19 @@
+{
+  "name": "XamPy — Python et pandas pour la donnée",
+  "short_name": "XamPy",
+  "description": "Leçons et exercices corrigés de Python et pandas, en français, exécutés dans le navigateur.",
+  "lang": "fr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#13233a",
+  "theme_color": "#13233a",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
