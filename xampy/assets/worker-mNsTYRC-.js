@@ -253,7 +253,13 @@ def explain_error(e: BaseException, ns: dict, code: str = "") -> dict:
         key = e.args[0] if e.args else None
         frames = _frames(ns)
         cols = [str(c) for _, df in frames for c in df.columns]
-        if isinstance(key, str) and frames:
+        missing = re.fullmatch(r"\\[(.*)\\] not in index", key) if isinstance(key, str) else None
+        if missing and frames:
+            names = re.findall(r"'([^']*)'", missing.group(1)) or [missing.group(1)]
+            msg = ("La colonne « " + names[0] + " » n'existe pas.") if len(names) == 1 else ("Les colonnes " + ", ".join(f"« {n} »" for n in names) + " n'existent pas.")
+            fixes = [f"« {n} » → « {near} »" for n in names if (near := _closest(n, cols))]
+            hint = ("Tu voulais peut-être dire : " + ", ".join(fixes) + ".") if fixes else f"Colonnes disponibles : {', '.join(dict.fromkeys(cols))[:300]}."
+        elif isinstance(key, str) and frames:
             msg = f"La colonne (ou clé) « {key} » n'existe pas."
             near = _closest(key, cols)
             if near:
@@ -590,4 +596,4 @@ def code_hints(code: str) -> list:
     if re.search(r"==\\s*None|!=\\s*None|==\\s*np\\.nan|==\\s*float\\(['\\"]nan", flat):
         hints.append({"message": "Comparer avec None ou NaN par == ne marche pas (NaN n'est égal à rien, même pas à lui-même).", "hint": "Utilise isna() / notna() sur une colonne, ou x is None pour une variable."})
     return hints
-`;const u="314.0.8",l=`https://cdn.jsdelivr.net/pyodide/v${u}/full/`;let i=null;const s=n=>self.postMessage(n);async function p(n,e){if(i)return;s({id:-1,progress:"Chargement de Python…"});const t=await(await import(`${l}pyodide.mjs`)).loadPyodide({indexURL:l});s({id:-1,progress:"Chargement de pandas…"}),await t.loadPackage(["pandas"]),s({id:-1,progress:"Préparation des données…"}),t.FS.mkdirTree("/home/pyodide/data"),await Promise.all(e.map(async o=>{const a=await fetch(`${n}/data/${o}`);if(!a.ok)throw new Error(`Fichier de données introuvable : ${o}`);t.FS.writeFile(`/home/pyodide/data/${o}`,new Uint8Array(await a.arrayBuffer()))})),t.FS.writeFile("/home/pyodide/xampy_runtime.py",c),t.FS.chdir("/home/pyodide"),t.runPython("import sys; sys.path.insert(0, '/home/pyodide')"),i=t.pyimport("xampy_runtime")}function d(n,...e){if(!i)throw new Error("Python n'est pas prêt");return i[n](...e)}self.onmessage=async n=>{const e=n.data;try{e.type==="init"?(await p(e.base,e.files),s({id:e.id,ok:!0})):e.type==="run"?s({id:e.id,ok:!0,json:d("run",e.code)}):s({id:e.id,ok:!0,json:d("check",e.code,e.solution,JSON.stringify(e.spec))})}catch(r){s({id:e.id,ok:!1,error:r instanceof Error?r.message:String(r)})}};
+`;const u="314.0.8",l=`https://cdn.jsdelivr.net/pyodide/v${u}/full/`;let r=null;const s=n=>self.postMessage(n);async function p(n,e){if(r)return;s({id:-1,progress:"Chargement de Python…"});const t=await(await import(`${l}pyodide.mjs`)).loadPyodide({indexURL:l});s({id:-1,progress:"Chargement de pandas…"}),await t.loadPackage(["pandas"]),s({id:-1,progress:"Préparation des données…"}),t.FS.mkdirTree("/home/pyodide/data"),await Promise.all(e.map(async o=>{const a=await fetch(`${n}/data/${o}`);if(!a.ok)throw new Error(`Fichier de données introuvable : ${o}`);t.FS.writeFile(`/home/pyodide/data/${o}`,new Uint8Array(await a.arrayBuffer()))})),t.FS.writeFile("/home/pyodide/xampy_runtime.py",c),t.FS.chdir("/home/pyodide"),t.runPython("import sys; sys.path.insert(0, '/home/pyodide')"),r=t.pyimport("xampy_runtime")}function d(n,...e){if(!r)throw new Error("Python n'est pas prêt");return r[n](...e)}self.onmessage=async n=>{const e=n.data;try{e.type==="init"?(await p(e.base,e.files),s({id:e.id,ok:!0})):e.type==="run"?s({id:e.id,ok:!0,json:d("run",e.code)}):s({id:e.id,ok:!0,json:d("check",e.code,e.solution,JSON.stringify(e.spec))})}catch(i){s({id:e.id,ok:!1,error:i instanceof Error?i.message:String(i)})}};
